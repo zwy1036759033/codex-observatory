@@ -1,6 +1,12 @@
 # CODEX Observatory · 本地活动观察台
 
-本项目在 [AgentCockpit / levywang](https://github.com/levywang/AgentCockpit) 的桌面框架与控制台基础上，融合 [HALOFLUX / Ryder191](https://github.com/Ryder191/haloflux) 的光环视觉，以及 [prompt-spider-ui / Kirito14IT](https://github.com/Kirito14IT/prompt-spider-ui) 的机械蜘蛛、抓取与词条飞行动效，并添加本地 Codex 活动适配。它们是三个上游项目，并非本项目原创的视觉设计。
+**本项目基于以下三个上游项目进行二次开发与视觉适配：**
+
+- **[AgentCockpit / levywang](https://github.com/levywang/AgentCockpit)**（MIT）：桌面框架、控制台及原版基础场景。
+- **[HALOFLUX / Ryder191](https://github.com/Ryder191/haloflux)**（源码公开，PolyForm Noncommercial 1.0.0）：光核、旋转光环、多层光束及视听设计。该项目有非商业限制，不属于可自由商用的 MIT 开源项目。
+- **[prompt-spider-ui / Kirito14IT](https://github.com/Kirito14IT/prompt-spider-ui)**（MIT）：机械蜘蛛、抓取收放、词条飞行与星云动效的设计参考及适配。
+
+本项目新增本地 Codex 活动适配、真实调用记录、已保存代码回放，以及两种视觉模式的整合与控制。上游框架和视觉设计的原创归属不因本次适配而改变。
 
 **包含 HALOFLUX 衍生视觉的整体版本仅限非商业用途。** 各部分版权归原作者所有，详见 [许可与来源](#许可与来源)。本项目是社区适配作品，与 OpenAI 无官方隶属关系。
 
