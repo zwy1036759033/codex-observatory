@@ -1,0 +1,23 @@
+CODEX Observatory - combined distribution license notice
+
+This repository includes work with separate upstream licenses. It is not licensed
+as one unrestricted MIT project. Preserve the following notices and documents:
+
+- AgentCockpit: Copyright (c) 2026 Levy,Wang. MIT License;
+  see licenses/AGENTCOCKPIT-LICENSE.txt.
+- HALOFLUX by Ryder191 (RYDER CODE / Ms MAIKEBAIs CAT):
+  https://github.com/Ryder191/haloflux
+  See licenses/HALOFLUX-LICENSE.txt for the full PolyForm Noncommercial 1.0.0
+  license and required upstream notices. HALOFLUX-derived code and audiovisual
+  design remain subject to those terms. The combined distribution is for
+  noncommercial use only.
+- prompt-spider-ui: Copyright (c) 2026 Kirito14IT. MIT License;
+  see licenses/PROMPT-SPIDER-UI-LICENSE.txt.
+
+Required Notice: Copyright (c) 2026 Ryder191 (RYDER CODE / Ms MAIKEBAIs CAT) - https://github.com/Ryder191/haloflux
+Required Notice: Noncommercial use only. Any commercial use is strictly prohibited. No commercial licenses are offered.
+
+New Codex adapter code and modifications outside HALOFLUX-derived material are
+provided under the MIT License, Copyright (c) 2026 zwy1036759033. The MIT permission
+and disclaimer text in licenses/AGENTCOCKPIT-LICENSE.txt applies to these additions
+with this copyright attribution. It does not override any upstream restrictions.

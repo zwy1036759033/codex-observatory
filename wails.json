@@ -1,0 +1,15 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "codex-observatory",
+  "outputfilename": "Codex-Observatory",
+  "frontend:dir": ".",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "wailsjsdir": "./src",
+  "author": {
+    "name": "AgentCockpit",
+    "email": "ops@agent.internal"
+  }
+}

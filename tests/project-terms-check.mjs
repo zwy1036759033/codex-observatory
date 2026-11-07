@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {projectPackets} from '../src/components/Stage/project-terms.js';
+const make=(path,lines)=>({path,file:path,agentCode:'CDX-01',lines});
+const a=projectPackets(make('C:/project-a/current.ts',['// unrelated comment','const currentProjectFunction = () => { return actualResult; };',`const password = "sk-secret-should-not-fly";`]));
+assert.ok(a.some(p=>p.text==='currentProjectFunction'));
+assert.ok(a.some(p=>p.text==='current.ts'));
+assert.ok(!a.some(p=>/secret|unrelated|const|return|exec/.test(p.text)));
+const b=projectPackets(make('C:/project-b/next.go',['func nextProjectFunction() { currentValue := 1 }']));
+assert.ok(!b.some(p=>p.text==='currentProjectFunction'||p.text==='current.ts'));
+assert.equal(projectPackets({lines:[],agentCode:'CDX-01',path:'a.ts'}).length,0);
+assert.equal(projectPackets({lines:['const fake = 1;'],agentCode:'FS-MON',path:'a.ts'}).length,0);
+assert.equal(projectPackets({lines:['const fake = 1;'],agentCode:'CDX-01'}).length,0);
+assert.ok(projectPackets(make('a.js',Array.from({length:200},(_,i)=>`let actualVariable${i} = 1`))).length<=48);
+console.log('PASS: only current Codex code terms, no previous project, literals, fallback or generic feed labels.');

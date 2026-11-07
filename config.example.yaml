@@ -1,0 +1,15 @@
+# Copy to config.yaml. Local settings are intentionally excluded from Git.
+# Choose your own passcode before explicitly enabling the optional display lock.
+passcode: "change-this-before-locking"
+speed: 1
+theme: dark
+mode: windowed
+autoLockMinutes: 0
+lockOnStartup: false
+windowed: true
+aiWatcherEnabled: true
+tvNoiseEffect: false
+mosaicEffect: false
+scanlineEffect: false
+workspaceDir: ""
+visualStyle: haloflux
